@@ -1,0 +1,25 @@
+var imagen = document.createElement("img");
+panel.appendChild(imagen);
+panel.getAttribute("id");
+panel.setAttribute("name", "panelin");
+
+var panel = document.getElementById("panel");
+var tabla = document.createElement("table");
+panel.appendChild(tabla);
+var thead = document.createElement("thead");
+tabla.appendChild(thead);
+var tbody = document.createElement("tbody");
+tabla.setAttribute("id", "imagenes");
+tabla.appendChild(tbody);
+tbody.setAttribute("id","cuerpo_imagenes");
+
+for(var i = 0; i<2; i++){
+  var tr = document.createElement("tr");
+  tbody.appendChild(tr);
+  for(var j = 0; j<5; j++){
+    var td = document.createElement("td");
+    tr.appendChild(td);
+    var imagen = document.createElement("img");
+    imagen.setAttribute("src", "img/sinatra-logo.jpg");
+    td.appendChild(imagen);
+  }

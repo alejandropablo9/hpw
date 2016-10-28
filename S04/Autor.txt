@@ -1,0 +1,12 @@
+var Autor = (function(){
+            
+    var con_nombre = function(arr_autores, nombre) {
+        return Arreglo.filter(function(autor){	
+            return ExpresionRegular.independiente_de_letras_acentuadas(nombre).test(autor.nombre);
+        }, arr_autores)
+    };
+
+    return {
+        "con_nombre":           con_nombre
+    };
+})();
