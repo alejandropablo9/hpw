@@ -1,0 +1,13 @@
+var a = function(obj_evento){
+    var td = obj_evento.originalTarget;
+    console.log(obj_evento.originalTarget);
+    if(td.tagName==="TD"){
+        var valor = td.textContent;
+        td.textContent = Number(valor) + 1;        
+    }
+    console.log(new Date());
+}
+
+var tablita = document.getElementById("tablita");
+tablita.addEventListener("click", a, false);
+

@@ -1,0 +1,31 @@
+ body{
+    width: 80%; 
+    margin-left:auto; 
+    margin-right: auto; 
+    min-height:100%;
+    height:100%;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    -moz-border-radius: 20px
+}
+
+table {
+    border: 2px solid red;
+    width: 500px;
+}
+
+table td {
+    border: 2px solid dodgerblue;
+    height: 50px;
+}
+
+.fondo-rojo {
+    background-color: red;
+}
+
+.fondo-azul{
+    background-color: blue;
+}
+.borde-grueso-azul {
+    border: 5px solid blue;
+}

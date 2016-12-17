@@ -1,0 +1,48 @@
+var main = function(){
+  console.log("iniciando...");
+
+  var a = function(obj_evento){
+    console.log(new Date());
+    
+    var isbn = document.getElementById("isbn");
+    isbn.value = isbn.value.toUpperCase();
+    
+    var titulo = document.getElementById("titulo");
+    titulo.value = titulo.value.toUpperCase();
+    
+    var editorial = document.getElementById("editorial");
+    editorial.value = editorial.value.toUpperCase();
+    
+  }
+
+  var boton = document.getElementById("aceptar");
+  boton.addEventListener("click", a, false);
+
+  console.log("terminando...");
+};
+
+main();
+
+/////////////////////////////////////////////////////
+
+var main = function(){
+  console.log("iniciando...");
+
+  var a = function(inicio, incremento){
+    var estado = inicio; 
+    return function(obj_evento){
+      console.log(new Date());
+     
+      var contador = document.getElementById("contador");
+      contador.value = estado;
+      estado = estado + incremento;
+    };    
+  };
+
+  var boton = document.getElementById("incrementar");
+  boton.addEventListener("click", a(0, 2), false);
+
+  console.log("terminando...");
+};
+
+main();
